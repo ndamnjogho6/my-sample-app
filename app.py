@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def get_secret():
-    secret_name = os.environ.get("SECRET_NAME")
+    secret_name = os.environ.get("MY_SECRET_VALUE")
     region_name = os.environ.get("AWS_REGION", "us-east-1")
 
     client = boto3.client('secretsmanager', region_name=region_name)
