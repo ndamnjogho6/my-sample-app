@@ -19,3 +19,5 @@ def get_secret():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080)
+
+# Minor update to trigger GitHub Actions pipeline
